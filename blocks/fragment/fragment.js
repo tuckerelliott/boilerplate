@@ -17,7 +17,7 @@ import {
  * @param {string} path The path to the fragment
  * @returns {HTMLElement} The root element of the fragment
  */
-/** Commented out to break dependency on AEM
+
 export async function loadFragment(path) {
   if (path && path.startsWith('/')) {
     const resp = await fetch(`${path}.plain.html`);
@@ -41,7 +41,7 @@ export async function loadFragment(path) {
   }
   return null;
 }
-*/
+
 export default async function decorate(block) {
   const link = block.querySelector('a');
   const path = link ? link.getAttribute('href') : block.textContent.trim();
