@@ -187,7 +187,7 @@ main .section.hero-video-container {
     transition: .4s all linear;
   }
   
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (width <= 1200px) {
     main .overlay {
       width: 970px;
     }
@@ -206,13 +206,13 @@ main .section.hero-video-container {
     }
   }
   
-  @media only screen and (max-width: 992px) {
+  @media only screen and (width <= 992px) {
     main .overlay {
       width: 750px;
     }
   }
   
-  @media only screen and (max-width: 768px)  {
+  @media only screen and (width <= 768px)  {
     main .hero-video-wrapper {
       height: unset;
       min-height: 450px;
@@ -243,14 +243,14 @@ main .section.hero-video-container {
     }
   }
   
-  @media only screen and (max-width: 575px) {
+  @media only screen and (width <= 575px) {
     main .full-video-container .play-pause-fullscreen-button svg {
       width: 50px;
       height: 50px;
     }
   }
   
-  @media only screen and (max-width: 390px) {
+  @media only screen and (width <= 390px) {
     main .overlay h1 {
       font-size: 30px;
     }
